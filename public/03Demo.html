@@ -1,0 +1,65 @@
+<div id="d1">这是测试的文本</div>
+<button onclick="fn()">你不是正经的按钮</button>
+<div>用户名称:</div>
+<input type="text" id="uname" onblur="txt_blur()" onfocus="Text_focus()"><span id="showUname"></span>
+<div>用户密码:</div>
+<input type="password" id="pwd" onfocus="pwd_focus()">
+<span id="showpwd"></span>
+<script>
+    /*
+    //var ele=document.getElementById("d1");
+    var ele=d1;
+    console.log(ele.innerHTML);
+    ele.innerHTML="我是通过DOM操作添加的值";
+    
+   var a=true;
+   function fn(){
+       if(a){
+        d1.innerHTML="我又进来了";
+       }
+       d1.innerHTML="我又出去了";
+   }
+   */
+    var a = true;
+    function fn() {
+        a = !a;
+        if (a) {
+            d1.innerHTML = `<table border="1px">
+    <tr>
+        <td>111</td>
+        <td>111</td>
+        <td>111</td>
+    </tr>
+    <tr>
+        <td>222</td>
+        <td>222</td>
+        <td>222</td>
+    </tr>
+    <tr>
+        <td>333</td>
+        <td>333</td>
+        <td>333</td>
+    </tr>
+</table>`
+        }
+        else {
+            d1.innerHTML = "";
+        }
+        console.log(a);
+    }
+    
+    function txt_blur() {
+        var user_name = uname.value;
+        if (user_name =="") {
+            showUname.innerHTML = "用户名不能为空";
+        } else {
+            showUname.innerHTML = "通过";
+        }
+    }
+    function pwd_focus(){
+        showpwd.innerHTML="密码长度为6~12位";
+    }
+    function Text_focus(){
+        showUname.innerHTML="用户名不能为空"
+    }
+</script>

@@ -1,0 +1,32 @@
+{
+  "name": "jryc",
+  "version": "1.0.0",
+  "description": "YCF YS JRYC 520",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node ./test.js",
+    "start":"node ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/854892214/resume.git"
+  },
+  "keywords": [
+    "YCF",
+    "YS",
+    "JRYC",
+    "520"
+  ],
+  "author": "YS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/854892214/resume/issues"
+  },
+  "homepage": "https://github.com/854892214/resume#readme"
+}

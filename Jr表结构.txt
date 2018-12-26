@@ -1,0 +1,32 @@
+软件定义期:
+   可行性分析
+   需求分析阶段
+软件开发期
+   概要设计
+   详细设计
+   编码实现
+   测试阶段
+软件维护期
+   项目部署阶段
+   项目维护阶段
+服务器
+insert into MovieList(Mname,Mdesc) values('','');
+insert into UserList(Uname,Uphone,isvip) values('杨松','8208208820',false);
+create database Jr charset utf-8;
+create table MovieList(Mid Int null,Mname varchar(32))
+
+CREATE TABLE UserList(Uid INT UNSIGNED NOT NULL PRIMARY KEY AUTO_
+INCREMENT,Uname VARCHAR(15) NOT NULL,Uphone int,isvip boll);
+电影列表 MovieList
+    电影编号
+    电影名称
+    电影类型
+    电影描述
+    电影价格
+
+用户列表 UserList
+    用户编号
+    用户名称
+    用户电话
+    是否是会员
+

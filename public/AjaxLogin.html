@@ -1,0 +1,41 @@
+<form action="Ajax/AjaxLogin" method="GET">
+    用户名:
+    <input type="text" id="uname">
+    <br> 密码:
+    <input type="text" id="uphone">
+    <input type="button" value="这是AJAXPost请求" onclick="AjaxPostLogin()">
+    <input type="button" value="这是AJAXGet请求" onclick="AjaxGetLogin()">
+</form>
+<div id="A"></div>
+<script src="function.js"></script>
+<script>
+    function AjaxPostLogin() {
+        var xhr = createXhr();
+        xhr.onreadystatechange = function () {
+            if (xhr.readystate == 4 && xhr.status == 200) {
+                var res = xhr.responseText;
+                $("A").innerHTML = res;
+            }
+        }
+        var uname = $("uname").value;
+        var uphone = $("uphone").value;
+        xhr.open("post", "Ajax/Ajaxlogin?Uname=" + uname + "&uphone=" + uphone, true);
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xhr.send("Uname=" + uname + "&uphone=" + uphone);
+    }
+
+    function AjaxGetLogin() {
+        var xhr = createXhr();
+        xhr.onreadystatechange = function () {
+            if (xhr.readystate == 4 && xhr.status == 200) {
+                var res = xhr.responseText;
+                $("A").innerHTML = res;
+            }
+        }
+        var uname = $("uname").value;
+        var uphone = $("uphone").value;
+        xhr.open("get", "Ajax/AjaxFrom?Uname=" + uname + "&uphone=" + uphone, true);
+        //xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        xhr.send(null);
+    }
+</script>

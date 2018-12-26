@@ -1,0 +1,36 @@
+/*top*/
+*{margin: 0;padding: 0;}
+    .top{background: #fafafa;height: 50px;}
+    .topleft{float: left;width: 40%;}
+    .topleft1{float: right;margin-right: 5rem;}
+    .login{line-height: 50px;}
+    .topright{float: left;width: 50%;}
+    .topli{list-style:none;float: left;line-height: 3.1rem;width: 100px;text-align: center;}
+    .topul{height: 3.1rem;}
+    a{text-decoration: none;color:#777;}
+    .topli:hover{background: red;}
+/*mid*/
+    .midleft{height: 200px;float: left;margin-left: 15rem}
+    .box{height: 200px;}
+    .formselect{float: left;position: relative;}
+    .inputselect{border:3px solid #ff7200;height: 2rem;padding: 2px;width: 17rem;float: left;}
+    .inputselect1{background: #ff7200;height: 2.6rem;color: white;width: 4rem;float: left;border:3px solid #ff7200;}
+    .midselect{width: 30%;float: left;margin: 2rem 5rem 0 10rem;}
+    .midright{margin-left: 2rem;float: left;}
+
+/*movielist*/
+.indexlist{list-style: none;float: left;width: 5rem;text-align: center;height: 2.5rem;line-height: 2.5rem;}
+#boot{width: 100%;height: 2.5rem;}
+.hidden{width: 220px;height: 2.5rem; float: left;visibility: hidden;}
+.indexlist:hover{color: #ff7200;}
+.indexlist:active{background: #ff7200;color: white;}
+.slicedown{width: 100%;height: 400px;background: #ff7200;border: 2px solid #ff7200}
+ul{height: 2.5rem;}
+.warpper{margin: 10px auto;background: tomato;width: 1200px;height: 100px;}
+.movielist{width: 1200px;display: flex;border: 1px solid black;margin-top: 1rem;height: 500px;margin: 1rem auto;justify-content: space-between;}
+.movielist>:first-child{width: 350px;height: 500px;border: 1px solid;}
+.movielist>:nth-child(2){width: 800px;height: 500px;border: 1px solid;margin: 0 auto;display: flex;flex-flow: wrap}
+.movielist>:nth-child(2)>.product{width: 170px;height: 200px;border: 1px solid;margin: 10px auto;}
+.movielist>:nth-child(2)>.product>p{width: 170px; text-align: center;}
+.movielist>:nth-child(2)>.product>p:nth-child(3){width: 170px; text-align: center;color: red;}
+.movielist>:nth-child(2)>.product>.listimg{width: 170px;height: 150px; background: url('img/index_hot_food_img1.png');background-size: 170px 150px;}
